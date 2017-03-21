@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!--<link rel="icon" href="../../favicon.ico">-->
+
+    <title>Proyecto Integrador</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../css/stylesheet.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Fixed navbar -->
+<nav id="nav" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a id="UserName" class="navbar-brand">Proyecto Integrador</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul id="font" class="nav navbar-nav">
+                <li><a href="../aplicar/listar.html" style="color: whitesmoke">Aplicar</a></li>
+                <li><a href="../mentores/listar.html" style="color: whitesmoke">Mentores</a></li>
+                <li><a href="../ProblemasRegionales/listar.html" style="color: whitesmoke">Problemas Regionales</a></li>
+
+                <!--<li class="dropdown">
+                    <a id="Dropdown" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color: whitesmoke">Proceso de pago <span class="caret"></span></a>
+                    <ul style="color: #337AB7" class="dropdown-menu">
+                        <li><a href="#" style="color: whitesmoke">Entrevista</a></li>
+                        <li><a href="#" style="color: whitesmoke">Evaluacion</a></li>
+                        <li><a href="#" style="color: whitesmoke">Terapia</a></li>
+                        <!--    <li role="separator" class="divider"></li>
+                            <li class="dropdown-header">Nav header</li>
+                            <li><a href="#">Separated link</a></li>
+                            <li><a href="#">One more separated link</a></li>
+                    </ul>
+                </li> -->
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div>
+</nav>
+
+<div id="container" class="container">
+
+    <h1>Crear Aspirante</h1>
+
+    <table style="width: 100%" class="table table-responsive">
+        <tr>
+            <td>
+                <div class="form-group">
+                    <label for="aspirant_id">Nombre de la empresa o proyecto</label>
+                    <input class="form-control" id="aspirant_id" name="aspirant_id" value="153" type="text">
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+                    <label for="aspirant_program">Programa</label>
+                    <select class="form-control" id="aspirant_program" name="">
+                        <option value="">(Seleccione)</option>
+                        <option selected="selected" value="LCH">Licenciatura Comunicación Humana</option>
+                    </select>
+                </div>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <h4>Datos por persona:</h4>
+                <div class="form-group">
+                    <label for="aspirant_FirstName">Nombre(s)</label>
+                    <input class="form-control" id="aspirant_FirstName" name="aspirant.FirstName" value="Victor Alexis" type="text">
+                </div>
+            </td>
+            <td>
+                <br>
+                <br>
+                <div class="form-group">
+                    <label for="aspirant_FatherLastName">Apellido paterno</label>
+                    <input class="form-control" id="aspirant_FatherLastName" name="aspirant.FatherLastName" value="Espinoza" type="text">
+                </div>
+            </td>
+            <td>
+                <br>
+                <br>
+                <div class="form-group">
+                    <label for="aspirant_MotherLastName">Apellido materno</label>
+                    <input class="form-control" id="aspirant_MotherLastName" name="aspirant.MatherLastName" value="Cervantes" type="text">
+                </div>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <div class="form-group">
+                    <label for="aspirant_birthdate">Correo</label>
+                    <input type="date" class="form-control" data-val="true" data-val-date="The field Fecha de nacimiento must be a date." data-val-required="The Fecha de nacimiento field is required." id="aspirant_birthdate" name="" value="">
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+                    <label for="aspirant_placeOfBirth">Edad</label>
+                    <input class="form-control" id="aspirant_placeOfBirth" name="" value="Chihuahua" type="text">
+                </div>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <div class="form-group">
+                    <label for="student_Address">Sexo</label>
+                    <input class="form-control" id="student_Address" name="" value="San Cristobal" type="text">
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+                    <label for="aspirant_interiorNumber">Telefono celular</label>
+                    <input class="form-control" data-val="true" data-val-number="The field Numero interior must be a number." data-val-required="The Numero interior field is required." id="aspirant_interiorNumber" name="" value="4323" type="text">
+                </div>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <div class="form-group">
+                    <label>CV breve</label>
+                    <textarea class="form-control" rows="5" id="comment"></textarea>
+                </div>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <h4>Datos generales del proyecto:</h4>
+                <div class="form-group">
+                    <label for="aspirant_country">Ciudad:</label>
+                    <select class="form-control" data-val="true" data-val-number="The field Estado must be a number." data-val-required="The Estado field is required." id="aspirant_country" name="">
+                        <option value="">(Seleccione)</option>
+                        <option selected="selected" value="2">Chihuahua</option>
+                        <option>Camargo</option>
+                        <option>Madera</option>
+                    </select>
+                </div>
+            </td>
+            <td>
+                <br>
+                <br>
+                <div class="form-group">
+                    <label>Descripción del proyecto</label>
+                    <textarea class="form-control" rows="5" id="comment"></textarea>
+                </div>
+            </td>
+
+            <td>
+                <br>
+                <br>
+                <div class="form-group">
+                    <label>URL del proyecto(En caso de contar con el):</label>
+                    <textarea class="form-control" rows="1" id="comment"></textarea>
+                </div>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <div class="form-group">
+                    <label for="aspirant_country">¿Cómo se enteró de Chihuahua Innova?</label>
+                    <select class="form-control" data-val="true" data-val-number="The field Estado must be a number." data-val-required="The Estado field is required." id="aspirant_country" name="">
+                        <option value="">(Seleccione)</option>
+                        <option value="Referencia">Referencia Personal</option>
+                        <option value="Internet">Internet</option>
+                        <option value="Redes">Redes Sociales</option>
+                        <option value="Impreso">Propaganda Impresa</option>
+                        <option value="Expo">Expo UACH</option>
+                        <option value="Visita">Visita a la institución</option>
+                    </select>
+                </div>
+            </td>
+
+            <td>
+                <div class="form-group">
+                    <label>Otro(s):</label>
+                    <textarea class="form-control" rows="1" id="comment"></textarea>
+                </div>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <h4>Problema y solución</h4>
+                <div class="form-group">
+                    <label>¿Qué problema trata de resolver?</label>
+                    <textarea class="form-control" rows="4" id=""></textarea>
+                </div>
+            </td>
+            <td>
+                <br>
+                <br>
+                <div class="form-group">
+                    <label>¿Cuál es la solución que usted propone?</label>
+                    <textarea class="form-control" rows="4" id="comment"></textarea>
+                </div>
+            </td>
+            <td>
+                <br>
+                <br>
+                <div class="form-group">
+                    <label>¿Qué es lo nuevo o innovador de su solución?</label>
+                    <textarea class="form-control" rows="4" id="comment"></textarea>
+                </div>
+            </td>
+        </tr>
+        </table>
+
+
+        <table style="width: 100%" class="table table-responsive">
+
+            <tr>
+                <td>
+                    <div>
+                        <label>¿Por qué escogiste esta idea para trabajar en ella?, ¿qué tanto conoces a la gente que tiene este problema?, ¿eres experto en algún área enfocada a este ramo?.(2000 caracteres)?</label>
+                        <textarea class="form-control" rows="6"></textarea>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <div class="form-group">
+                        <label for="aspirant_HearAboutSchool">¿A qué sector pertenece tu idea?</label>
+                        <select class="form-control" data-val="true" data-val-number="The field Estado civil de los padres must be a number." data-val-required="The Estado civil de los padres field is required." id="aspirant_HearAboutSchool" name="">
+                            <option value="">(Seleccione)</option>
+                            <option value="Referencia">Referencia Personal</option>
+                            <option value="Internet">Internet</option>
+                            <option value="Redes">Redes Sociales</option>
+                            <option value="Impreso">Propaganda Impresa</option>
+                            <option value="Expo">Expo UACH</option>
+                            <option value="Visita">Visita a la institución</option>
+                        </select>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <div class="form-group">
+                        <label>Describe el mercado potencial y el segmento de clientes y cómo se llegaría a ellos(500 caracteres):</label>
+                        <textarea class="form-control" rows="4" id="comment"></textarea>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <div class="form-group">
+                        <label>¿Tienes competencia?, ¿cuál es y en que se diferencia tu producto o servicio?(1000 caracteres):</label>
+                        <textarea class="form-control" rows="4" id="comment"></textarea>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <div class="form-group">
+                        <label>Link opcional a video:</label>
+                        <textarea class="form-control" rows="1" id="comment"></textarea>
+                    </div>
+                </td>
+            </tr>
+
+
+            <tr>
+            <td colspan="3" id="button"><input onclick="window.location = 'listar.html'" class="btn btn-primary" type="submit" value="Guardar"></td>
+        </tr>
+        <tr>
+            <td>Fin de llenado de formato</td>
+        </tr>
+    </table>
+
+</div> <!-- /container -->
+
+<footer>
+    <div class="container">
+        <p><a style="color: whitesmoke">Victor Espinoza</a></p>
+    </div>
+</footer>
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+
+
+
+</body>
+</html>
