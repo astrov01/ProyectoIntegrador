@@ -56,40 +56,55 @@
 
 <div id="container" class="container">
 
-    <h1>Agregar Ciclo</h1>
+    <h1>Agregar mentor</h1>
 
 
     <table class="table table-responsive">
         <tr>
             <td>
-                <div>
-                    <label>Nombre del Ciclo:</label>
-                    <input class="form-control" type="text" name="nombre" value="">
+                <div class="form-group">
+                    <label for="aspirant_id">Nombre de la empresa o proyecto</label>
+                    <input class="form-control" id="aspirant_id" name="aspirant_id" value="" type="text">
                 </div>
             </td>
             <td>
-                <div>
-                    <label>Tipo de Ciclo:</label>
-                    <input class="form-control" type="text" name="nombre" value="">
+                <div class="form-group">
+                    <label for="aspirant_program">Programa</label>
+                    <select class="form-control" id="aspirant_program" name="">
+                        <option value="">(Seleccione)</option>
+                        <option selected="selected" value="LCH">Innovación</option>
+                    </select>
+                </div>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <h4>Datos de mentor:</h4>
+                <div class="form-group">
+                    <label for="aspirant_FirstName">Nombre(s)</label>
+                    <input class="form-control" id="aspirant_FirstName" name="aspirant.FirstName" value="Victor Alexis" type="text">
+                </div>
+            </td>
+            <td>
+                <br>
+                <br>
+                <div class="form-group">
+                    <label for="aspirant_FatherLastName">Apellido paterno</label>
+                    <input class="form-control" id="aspirant_FatherLastName" name="aspirant.FatherLastName" value="Espinoza" type="text">
+                </div>
+            </td>
+            <td>
+                <br>
+                <br>
+                <div class="form-group">
+                    <label for="aspirant_MotherLastName">Apellido materno</label>
+                    <input class="form-control" id="aspirant_MotherLastName" name="aspirant.MatherLastName" value="Cervantes" type="text">
                 </div>
             </td>
         </tr>
         <tr>
-            <td>
-                <div>
-                    <label>Fecha de Inicio:</label>
-                    <input class="form-control" type="date" name="nombre" value="">
-                </div>
-            </td>
-            <td>
-                <div>
-                    <label>Fecha de Término:</label>
-                    <input class="form-control" type="date" name="nombre" value="">
-                </div>
-            </td>
-        </tr>
-        <tr>
-            <td colspan="2" id="button"><input onclick="window.location = 'listar.html'" class="btn btn-primary" type="submit" value="Guardar"></td>
+            <td colspan="3" id="button"><input onclick="window.location = 'listar.html'" class="btn btn-primary" type="submit" value="Guardar"></td>
         </tr>
     </table>
 
